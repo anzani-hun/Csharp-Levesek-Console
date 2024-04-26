@@ -24,11 +24,13 @@ namespace Csharp_Levesek_NemethZ
 
             //1. feladat:
             Console.WriteLine("001. kérdés: Az adattáblában hány leves szerepel? ");
+            Console.ForegroundColor = ConsoleColor.Green;
             Console.WriteLine($"Az adatbázisban [{levesek.Count} db] leves szerepel.\n\n");
 
-          
+
 
             //2. feladat:
+            Console.ForegroundColor = ConsoleColor.White;
             Console.WriteLine("002. kérdés: Melyik levesben van a legtöbb kalória? ");
 
             int legtobbKaloria = 0;
@@ -39,17 +41,20 @@ namespace Csharp_Levesek_NemethZ
                     legtobbKaloria = item.Kaloria;
                 }
             }
+            Console.ForegroundColor = ConsoleColor.Green;
             Console.WriteLine($"A legtöbb kalória {legtobbKaloria}.\n\n");
 
 
-            
+
             //3. feladat:
+            Console.ForegroundColor = ConsoleColor.White;
             Console.WriteLine("003. kérdés: Írasd ki azokat a leveseket, amelyek nevében nem szerepel a leves szó! ");
             foreach (Levesek item in levesek)
             {
                 if (!item.Megnevezes.Contains("leves"))
                 {
-                    Console.WriteLine($"Aminek a nevében nem szerepel a leves szó a(z): {item.Megnevezes}");
+                    Console.ForegroundColor = ConsoleColor.Green;
+                    Console.WriteLine($"{item.Megnevezes}");
                 }
             }
 
