@@ -1,7 +1,5 @@
 #Konzolos feladat:
 
-`készíts grafikus alkalmazást új leves rögzítésére`
-
 ` az adattáblában hány leves szerepel?`
 
 `Melyik levesben van a legtöbb kalória?`
@@ -10,3 +8,9 @@
 
 
 <img src="!futtatas-kep.PNG" alt="leves felvétele"/>
+
+
+
+#Grafikus WINFORM feladat:
+
+`készíts grafikus alkalmazást új leves rögzítésére`
